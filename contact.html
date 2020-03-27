@@ -26,9 +26,9 @@
           Name: <input type="text" name="name"><br>
           Address: <input type="text" name="name">
           <select name="state">
-            <option class = "state" value="UT">Utah</option>
-            <option class = "state" value="CA">California</option>
-            <option class = "state" value="NY">New York</option>
+            <option class = "state" value="UT" id="state1">Utah</option>
+            <option class = "state" value="CA" id="state2">California</option>
+            <option class = "state" value="NY" id="state3">New York</option>
           </select>        
       </fieldset>
       <input id="maleRB" type="radio" name="gender" value="male">
@@ -50,9 +50,9 @@
 			//Change the states value property to the appropriate state abbreviation. 
 
 			
-			
-			
-			
+			/* document.getElementById("state1").innerHTML="Missouri";  
+            document.getElementById("state2").innerHTML="Iowa";
+            document.getElementById("state3").innerHTML="Nebraska"; */
 			
 			
 			
@@ -62,11 +62,13 @@
 
 			
 			
-			
-			
-			
-			
-			
+			var myClasses = document.getElementsByClassName("state");
+
+            for (var i = 0; i < myClasses.length; i++) 
+                {
+                  myClasses[i].innerHTML = "Hello";
+                }
+
 			
 			
 	
